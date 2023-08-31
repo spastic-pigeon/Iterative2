@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome to My App</title>
+    <title>Sugar Rush</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link to your custom CSS -->
+    <!-- Include other necessary CSS and JS links here -->
 </head>
 <body>
-    <h1>Welcome to My Web Application</h1>
-    <p>This is the index page of my web app.</p>
-    <a href="{{ url_for('register') }}">Go to Registration</a>
+    <div class="header">
+        <h1>Sugar Rush</h1>
+    </div>
+
+  <div class="content">
+    <div class="restaurant-section">
+        <div class="restaurant-text">
+            <h2>Welcome to Sugar Rush</h2>
+            <p>Indulge in a delightful journey of sweets and treats at Sugar Rush. Our wide array of confections promises to satisfy your cravings and bring a smile to your face.</p>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-box left-image">
+            <img src="{{ url_for('static', filename='images/dessert1.jpg') }}" alt="Dessert 1">
+        </div>
+        <div class="restaurant-text middle-text">
+            <h2>Our desserts</h2>
+            <p>Experience the magic of Sugar Rush, where every bite transports you to a world of sweetness and joy. From classic favorites to innovative creations, our treats are crafted with love and passion.</p>
+        </div>
+        <div class="image-box right-image">
+            <img src="{{ url_for('static', filename='images/dessert2.jpg') }}" alt="Dessert 2">
+        </div>
+    </div>
+</div>
+
+        <div class="text-with-carousel">
+            <div class="text">
+                <div class="text-box">
+                    <div class="overlay-shapes">
+                        <div class="triangle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <h2>Discover Our Latest Events</h2>
+                    <p>Learn more about our exciting events.</p>
+                    <a class="register-button" href="{{ url_for('register') }}">Discover more</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
