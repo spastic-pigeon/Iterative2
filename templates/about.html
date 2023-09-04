@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upcoming events</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Upcoming Events</h1>
+    </div>
+
+    <div class="text-with-carousel">
+        <div class="text">
+            <div class="text-box">
+                <div class="overlay-shapes">
+                    <div class="triangle"></div>
+                    <div class="circle"></div>
+                </div>
+                <h2>Join Us for an Unforgettable Evening</h2>
+                <p>🎉 Join us for an unforgettable evening of connection and camaraderie at our upcoming socialisation event! 🌟 If you're looking to expand your social circle and meet like-minded individuals, this is the perfect opportunity. Come and engage in stimulating conversations, share your passions, and forge new friendships in a relaxed and welcoming atmosphere. Whether you're new in town or simply eager to meet new people, our event promises laughter, networking, and the chance to build meaningful relationships. Don't miss out on a night of fun and interaction – mark your calendar and join us for an enriching social experience that could lead to lifelong connections. See you there! 👋🥂</p>
+                <a class="register-button" href="{{ url_for('register') }}">Register Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
