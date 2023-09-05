@@ -195,3 +195,70 @@ body {
     align-items: center;
     margin: 0 10px; /* Adjust this margin value as needed */
 }
+/* Center the registration form within a container */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #ffc8dd; /* Light pink */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Style for the registration form */
+.registration-form {
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    background-color: rgba(255, 255, 255, 0.85); /* White with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Separate the heading from the interests */
+.registration-form h1 {
+    margin-bottom: 20px; /* Add margin to the heading */
+}
+
+/* White box containing the form elements */
+.form-container {
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -20px; /* Move the white box up */
+}
+
+/* Style for form elements */
+.form-group {
+    text-align: left; /* Align form elements to the left */
+    margin-bottom: 20px; /* Add margin between form elements */
+}
+
+.form-group label {
+    display: block; /* Display labels as blocks for better spacing */
+    margin-bottom: 5px;
+}
+
+/* Display interests in a row format with a maximum of four per row */
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align interests to the top */
+    gap: 10px; /* Adjust the gap between interests as needed */
+}
+
+/* Style for individual interest checkboxes */
+.interests label {
+    display: flex;
+    align-items: center; /* Align the checkbox and text vertically */
+    margin: 0;
+    width: calc(25% - 8px); /* Equal width for all checkboxes with gap */
+    min-width: calc(25% - 5px); /* Ensure a minimum width for consistent sizing */
+    max-width: calc(25% - 10px); /* Ensure a maximum width for consistent sizing */
+    flex-direction: row-reverse; /* Reverse the direction to have checkbox on the right */
+}
+
+.interests input[type="checkbox"] {
+    margin-right: 3px; /* Reduce the space between checkbox and text */
+}

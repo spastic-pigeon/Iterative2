@@ -1,21 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Registration</title>
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>User Registration</h1>
-    <form method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select><br>
-        <label for="interests">Interests:</label>
-        <input type="text" id="interests" name="interests" required><br>
-        <button type="submit">Register</button>
-    </form>
+    <div class="header">
+        <h1>Registration</h1>
+    </div>
+
+    <div class="content">
+        <div class="registration-container">
+            <form method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" id="phone_number" name="phone_number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+</div>
+                <div class="form-group">
+    <label>Interests (Select up to four):</label>
+    <div class="interests">
+<div> </div>
+        <input type="checkbox" id="interest1" name="music[]" value="Music">
+        <label for="interest1">Music</label>
+
+        <input type="checkbox" id="interest2" name="travel[]" value="Travel">
+        <label for="interest2">Travel</label>
+
+        <input type="checkbox" id="interest3" name="cooking" value="Cooking">
+        <label for="interest3">Cooking</label>
+
+        <input type="checkbox" id="interest4" name="sports" value="Sports">
+        <label for="interest4">Sports</label>
+
+        <input type="checkbox" id="interest5" name="art[]" value="Art">
+        <label for="interest5">Art</label>
+
+        <input type="checkbox" id="interest6" name="reading[]" value="Reading">
+        <label for="interest6">Reading</label>
+
+        <input type="checkbox" id="interest7" name="hiking[]" value="Hiking">
+        <label for="interest7">Hiking</label>
+
+        <input type="checkbox" id="interest8" name="photography[]" value="Photography">
+        <label for="interest8">Photography</label>
+
+        <input type="checkbox" id="interest9" name="gaming[]" value="Gaming">
+        <label for="interest9">Gaming</label>
+
+        <input type="checkbox" id="interest10" name="fashion[]" value="Fashion">
+        <label for="interest10">Fashion</label>
+
+        <input type="checkbox" id="interest11" name="movies[]" value="Movies">
+        <label for="interest11">Movies</label>
+
+        <input type="checkbox" id="interest12" name="technology[]" value="Technology">
+        <label for="interest12">Technology</label>
+
+        <input type="checkbox" id="interest13" name="cooking[]" value="Cooking">
+        <label for="interest13">Cooking</label>
+
+        <input type="checkbox" id="interest14" name="yoga[]" value="Yoga">
+        <label for="interest14">Yoga</label>
+
+        <input type="checkbox" id="interest15" name="dancing[]" value="Dancing">
+        <label for="interest15">Dancing</label>
+
+        <input type="checkbox" id="interest16" name="fitness[]" value="Fitness">
+        <label for="interest16">Fitness</label>
+
+        <input type="checkbox" id="interest17" name="camping[]" value="Camping">
+        <label for="interest17">Camping</label>
+
+        <input type="checkbox" id="interest18" name="writing[]" value="Writing">
+        <label for="interest18">Writing</label>
+
+        <input type="checkbox" id="interest19" name="crafts[]" value="Crafts">
+        <label for="interest19">Crafts</label>
+
+        <input type="checkbox" id="interest20" name="foodie[]" value="Foodie">
+        <label for="interest20">Foodie</label>
+
+        <input type="checkbox" id="interest21" name="history[]" value="History">
+        <label for="interest21">History</label>
+
+        <input type="checkbox" id="interest22" name="science[]" value="Science">
+        <label for="interest22">Science</label>
+
+        <input type="checkbox" id="interest23" name="nature[]" value="Nature">
+        <label for="interest23">Nature</label>
+
+        <input type="checkbox" id="interest24" name="DIY[]" value="DIY">
+        <label for="interest24">DIY</label>
+
+        <input type="checkbox" id="interest25" name="pets[]" value="Pets">
+        <label for="interest25">Pets</label>
+
+        <input type="checkbox" id="interest26" name="volunteering[]" value="Volunteering">
+        <label for="interest26">Volunteering</label>
+
+        <input type="checkbox" id="interest27" name="meditation[]" value="Meditation">
+        <label for="interest27">Meditation</label>
+
+        <input type="checkbox" id="interest28" name="activities[]" value="Outdoor Activities">
+        <label for="interest28">Outdoor Activities</label>
+
+        <input type="checkbox" id="interest29" name="fashion[]" value="Fashion">
+        <label for="interest29">Fashion</label>
+
+        <input type="checkbox" id="interest30" name="art[]" value="Art">
+        <label for="interest30">Art</label>
+    </div>
+</div>
+
+
+                <!-- Add the rest of your form fields here -->
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
